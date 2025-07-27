@@ -52,7 +52,7 @@ const Login = ({ onLogin, onNavigate, showMessage }) => {
           </div>
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-3 px-4 rounded-xl focus:outline-none focus:ring-3 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+            className="w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-blue-900 text-white font-bold py-3 px-4 rounded-xl focus:outline-none focus:ring-3 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
             disabled={loading}
           >
             {loading ? 'Logging In...' : 'Login'}

@@ -2,10 +2,10 @@ import React from 'react';
 
 const Navbar = ({ isLoggedIn, userRole, onLogout, onNavigate }) => {
   return (
-    <nav className="bg-gradient-to-r from-blue-700 to-blue-900 p-4 shadow-xl">
+    <nav className="bg-gradient-to-r from-orange-700 to-blue-900 p-4 shadow-xl">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-3xl font-extrabold tracking-wide cursor-pointer" onClick={() => onNavigate('/')}>
-          mySociety
+          MySociety
         </div>
         <ul className="flex space-x-4">
           {isLoggedIn ? (
@@ -62,12 +62,7 @@ const Navbar = ({ isLoggedIn, userRole, onLogout, onNavigate }) => {
             </>
           ) : (
             <li>
-              <button
-                onClick={() => onNavigate('/login')}
-                className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition duration-300 shadow-md transform hover:scale-105"
-              >
-                Login
-              </button>
+              
             </li>
           )}
         </ul>
